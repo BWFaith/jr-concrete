@@ -209,6 +209,11 @@
       };
     }
     F.addEventListener("input", calc);
+    const qp = new URLSearchParams(location.search);
+    ["service", "area", "name", "phone"].forEach((k) => {
+      const v = qp.get(k);
+      if (v && $f(k)) $f(k).value = v;
+    });
     calc();
     F.onsubmit = async (e) => {
       e.preventDefault();

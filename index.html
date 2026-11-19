@@ -103,56 +103,110 @@
         </div>
 
         <div class="wrap hc">
-          <h1>
-            <span class="ln"><span>Built solid.</span></span
-            ><span class="ln"
-              ><span>Poured right.</span></span
-            ><span class="ln"
-              ><span
-                class="rot"
-                data-w="Driveways,Patios,Slabs,Sidewalks,Retaining walls"
-                >Driveways</span
-              ></span
-            >
-          </h1>
-          <p>
-            Family-owned concrete contractors serving
-            Houston, Conroe, Montgomery and every town
-            around them. Commercial and residential, big
-            jobs and small.
-          </p>
-          <div class="acts">
-            <a
-              class="btn"
-              href="quote.html"
-              >Get a free estimate</a
-            ><a
-              class="btn o"
-              href="gallery.html"
-              >See our work</a
-            >
+          <div class="hl">
+            <h1>
+              <span class="ln"
+                ><span>Built solid.</span></span
+              ><span class="ln"
+                ><span>Poured right.</span></span
+              ><span class="ln"
+                ><span
+                  class="rot"
+                  data-w="Driveways,Patios,Slabs,Sidewalks,Retaining walls"
+                  >Driveways</span
+                ></span
+              >
+            </h1>
+            <p>
+              Family-owned concrete contractors serving
+              Houston, Conroe, Montgomery and every town
+              around them. Commercial and residential, big
+              jobs and small.
+            </p>
+            <div class="acts">
+              <a
+                class="btn"
+                href="quote.html"
+                >Get a free estimate</a
+              ><a
+                class="btn o"
+                href="gallery.html"
+                >See our work</a
+              >
+            </div>
           </div>
-        </div>
-
-        <div class="badge">
-          <svg viewBox="0 0 150 150">
-            <defs>
-              <path
-                id="c"
-                d="M75 75m-62 0a62 62 0 1 1 124 0a62 62 0 1 1-124 0"
-              />
-            </defs>
-            <text
-              fill="#fff"
-              font-size="13"
-              font-weight="700"
-              letter-spacing="3"
+          <aside
+            class="hq"
+            aria-label="Quick booking"
+          >
+            <h3>Get a quick quote</h3>
+            <p>
+              Tell us the basics. You'll see your price
+              range on the next step.
+            </p>
+            <form
+              action="quote.html"
+              method="get"
             >
-              <textPath href="#c">
-                FREE ESTIMATES • FAMILY OWNED •
-              </textPath>
-            </text></svg
-          ><b>JR</b>
+              <label for="hq-s">Service</label>
+              <select
+                id="hq-s"
+                name="service"
+              >
+                <option value="driveway">Driveway</option>
+                <option value="sidewalk">Sidewalk</option>
+                <option value="patio">Patio</option>
+                <option value="slab">Slab</option>
+                <option value="paving">Paving</option>
+                <option value="retaining">
+                  Retaining wall
+                </option>
+                <option value="breakout">
+                  Break-out &amp; pour-back
+                </option>
+                <option value="spray">
+                  Spray pool &amp; patio deck
+                </option>
+                <option value="sawcut">
+                  Concrete saw cutting
+                </option>
+              </select>
+              <label for="hq-a">Size (sq ft)</label>
+              <input
+                id="hq-a"
+                name="area"
+                type="number"
+                min="1"
+                placeholder="e.g. 400"
+              />
+              <label for="hq-n">Your name</label>
+              <input
+                id="hq-n"
+                name="name"
+                autocomplete="name"
+                required
+              />
+              <label for="hq-p">Phone</label>
+              <input
+                id="hq-p"
+                name="phone"
+                type="tel"
+                autocomplete="tel"
+                required
+              />
+              <button
+                class="btn"
+                type="submit"
+              >
+                See my estimate
+              </button>
+            </form>
+            <a
+              class="hq-call"
+              href="tel:+13464387834"
+              >Or call 346-438-7834</a
+            >
+          </aside>
         </div>
 
         <div class="hstats">
