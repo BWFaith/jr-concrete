@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1"
+    />
+    <title>Book & Get a Quote | Jr Concrete Services</title>
+    <meta
+      name="description"
+      content="Build a concrete estimate and book your job online. A copy is emailed to you."
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Figtree:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="images/logo.jpg"
+    />
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+    />
+  </head>
+  <body>
+    <div id="prog"></div>
+    <header>
+      <div class="wrap nav">
+        <a
+          class="brand"
+          href="index.html"
+          ><img
+            src="images/logo.jpg"
+            alt="Jr Concrete Services logo"
+          /><span>Jr Concrete Services</span></a
+        >
+        <nav>
+          <button
+            class="burger"
+            aria-label="Menu"
+            aria-expanded="false"
+          >
+            <i></i><i></i><i></i>
+          </button>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="process.html">Process</a></li>
+            <li><a href="service-areas.html">Areas</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a
+                class="btn"
+                href="quote.html"
+                >Get a quote</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section
+        class="phero"
+        style="--bg: url(images/con14.jpg)"
+      >
+        <div class="wrap">
+          <div class="crumb">Home / Book</div>
+          <h1>Book &amp; Get a Quote</h1>
+          <p>
+            Build your estimate, pick a date and we email
+            you a copy.
+          </p>
+        </div>
+      </section>
+      <section class="sec conc">
+        <div
+          class="wrap g2"
+          style="
+            align-items: start;
+            grid-template-columns: 1.5fr 1fr;
+          "
+        >
+          <form
+            id="qf"
+            class="box"
+          >
+            <div class="fm">
+              <div class="f">
+                <label for="service">Service</label
+                ><select
+                  id="service"
+                  name="service"
+                >
+                  <option value="driveway">Driveway</option>
+                  <option value="sidewalk">Sidewalk</option>
+                  <option value="patio">Patio</option>
+                  <option value="slab">Slab</option>
+                  <option value="paving">Paving</option>
+                  <option value="retaining">
+                    Retaining wall (face sq ft)
+                  </option>
+                  <option value="breakout">
+                    Break-out & pour-back
+                  </option>
+                  <option value="spray">
+                    Spray pool & patio deck
+                  </option>
+                  <option value="sawcut">
+                    Concrete saw cutting
+                  </option>
+                </select>
+              </div>
+              <div>
+                <label for="area">Size (sq ft)</label
+                ><input
+                  id="area"
+                  name="area"
+                  type="number"
+                  min="1"
+                  placeholder="e.g. 400"
+                  required
+                />
+              </div>
+              <div>
+                <label for="thick">Thickness</label
+                ><select
+                  id="thick"
+                  name="thick"
+                >
+                  <option value="4">4 inch</option>
+                  <option value="5">5 inch</option>
+                  <option value="6">6 inch</option>
+                </select>
+              </div>
+              <div>
+                <label for="finish">Finish</label
+                ><select
+                  id="finish"
+                  name="finish"
+                >
+                  <option value="broom">
+                    Broom finish
+                  </option>
+                  <option value="stamped">Stamped</option>
+                  <option value="aggregate">
+                    Exposed aggregate
+                  </option>
+                  <option value="color">Colored</option>
+                  <option value="spray">
+                    Spray texture
+                  </option>
+                </select>
+              </div>
+              <div>
+                <label for="zone"
+                  >Distance from Conroe</label
+                ><select
+                  id="zone"
+                  name="zone"
+                >
+                  <option value="near">
+                    Under 20 miles
+                  </option>
+                  <option value="mid">20–40 miles</option>
+                  <option value="far">40+ miles</option>
+                </select>
+              </div>
+              <div class="f opts">
+                <label
+                  ><input
+                    type="checkbox"
+                    name="rebar"
+                    id="rebar"
+                    checked
+                  />
+                  Rebar</label
+                ><label
+                  ><input
+                    type="checkbox"
+                    name="demo"
+                    id="demo"
+                  />
+                  Remove old concrete</label
+                >
+              </div>
+              <div>
+                <label for="date">Preferred date</label
+                ><input
+                  id="date"
+                  name="date"
+                  type="date"
+                  required
+                />
+              </div>
+              <div>
+                <label for="time">Time</label
+                ><select
+                  id="time"
+                  name="time"
+                >
+                  <option>Morning</option>
+                  <option>Afternoon</option>
+                </select>
+              </div>
+              <div>
+                <label for="name">Full name</label
+                ><input
+                  id="name"
+                  name="name"
+                  required
+                  autocomplete="name"
+                />
+              </div>
+              <div>
+                <label for="phone">Phone</label
+                ><input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  required
+                  autocomplete="tel"
+                />
+              </div>
+              <div class="f">
+                <label for="email"
+                  >Email (your quote is sent here)</label
+                ><input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+              <div class="f">
+                <label for="address">Job address</label
+                ><input
+                  id="address"
+                  name="address"
+                  required
+                  autocomplete="street-address"
+                />
+              </div>
+              <div class="f">
+                <label for="notes">Notes</label
+                ><textarea
+                  id="notes"
+                  name="notes"
+                  rows="3"
+                ></textarea>
+              </div>
+              <div class="f">
+                <button
+                  class="btn"
+                  type="submit"
+                >
+                  Book &amp; email my quote
+                </button>
+                <div
+                  id="msg"
+                  class="msg"
+                  role="status"
+                ></div>
+              </div>
+            </div>
+          </form>
+          <aside class="est">
+            <div class="note">Estimated cost</div>
+            <div
+              class="p"
+              id="er"
+            >
+              $0
+            </div>
+            <table id="tb"></table>
+            <p class="note">
+              Estimate only. Final price is confirmed after
+              a site visit. Minimum job charges may apply.
+            </p>
+            <p style="margin-top: 14px">
+              <a
+                href="tel:+13464387834"
+                style="color: var(--g2); font-weight: 700"
+                >Prefer to talk? 346-438-7834</a
+              >
+            </p>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap">
+        <div class="g4">
+          <div>
+            <h4>Jr Concrete Services</h4>
+            <p>
+              A local, family-owned concrete company serving
+              Houston and the surrounding area. Commercial
+              and residential.
+            </p>
+          </div>
+          <div>
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="process.html">Process</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Services</h4>
+            <ul>
+              <li><a href="services.html">Driveways</a></li>
+              <li><a href="services.html">Sidewalks</a></li>
+              <li><a href="services.html">Patios</a></li>
+              <li><a href="services.html">Slabs</a></li>
+              <li>
+                <a href="services.html">Retaining Walls</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>Get in touch</h4>
+            <ul>
+              <li>
+                <a href="tel:+13464387834">346-438-7834</a>
+              </li>
+              <li>Free estimates</li>
+              <li>Houston, TX &amp; surrounding areas</li>
+              <li><a href="quote.html">Book online</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="cp">
+          <span
+            >© 2026 Jr Concrete Services. All rights
+            reserved.</span
+          ><span>God bless.</span>
+        </div>
+      </div>
+    </footer>
+    <a
+      class="call"
+      href="tel:+13464387834"
+      >Call 346-438-7834</a
+    >
+    <div class="lb">
+      <button aria-label="Close">×</button><img alt="" />
+    </div>
+    <script src="js/config.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4.4.1/dist/email.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
